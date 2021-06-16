@@ -344,6 +344,15 @@ textarea.input {
   color: #0b0f28 !important;
 }
 
+#andrea {
+  max-height: 262.5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #andrea {
+    max-height: unset !important;
+  }
+}
 /* Mobile nav */
 
 @media only screen and (max-width: 767px) {
@@ -351,12 +360,12 @@ textarea.input {
     margin: 0px -15px;
     max-height: 0;
     overflow-y: scroll;
-    background-color: #FFF;
     -webkit-transition: 0.3s all;
     transition: 0.3s all;
   }
   .main-nav.open {
     max-height: 500px;
+    background-color: #FFF;
   }
   .main-nav li.active a:after {
     display: none;
@@ -370,6 +379,7 @@ textarea.input {
   }
   .navbar-toggle {
     display: block;
+    color: gray !important;
   }
 }
 
@@ -1074,6 +1084,12 @@ textarea.input {
   flex-direction: column;
 }
 
+.logo-collection {
+  padding-top: 30px; 
+  display: flex; 
+  align-items: center;
+}
+
 /*=========================================================
 	RESPONSIVE
 ===========================================================*/
@@ -1086,6 +1102,11 @@ textarea.input {
   .copyright {
     display: block;
     text-align: center;
+  }
+  .logo-collection {
+    display: block;
+    align-items: unset;
+    margin: auto; max-width: 300px;
   }
 }
 
