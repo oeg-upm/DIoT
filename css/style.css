@@ -78,7 +78,8 @@ a {
 a:hover, a:focus {
   text-decoration: none;
   outline: none;
-  color: #912929;
+  color: #dd0a37;
+  opacity: 0.8;
 }
 
 ul, ol {
@@ -159,7 +160,9 @@ textarea.input {
   top: 0;
   right: 0;
   bottom: 0;
-  /*background-size: cover;*/
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: 10px;
   padding: 50px !important;
   z-index: -1;
 }
@@ -295,7 +298,7 @@ textarea.input {
 }
 
 #header.transparent-navbar .main-nav li a {
-  color: #FFF;
+  color: gray;
 }
 
 #header.fixed-navbar .main-nav li a {
